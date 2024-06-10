@@ -2,40 +2,98 @@ body {
     font-family: Baskerville, serif;
     text-align: center;
     margin: 0;
-    padding: 0;
-    background-color: #ffedc2;
+    background-color: #fff;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #466280;
+    color: white;
 }
 
-header h1 {
-    margin: 0;
+header h3 {
+    padding-left: 45px;
 }
+
+header nav {
+    padding-right: 45px;
+}
+header a {
+    color: white;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0 0px;
+}
+
+
+li {
+    padding-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #3973c9
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #265cae
+}
+
 
 main {
+    margin-top: 100px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main div {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-img {
-    width: 50%;
-    max-width: 200px;
+#Github-button {
+    padding: 10px 20px;
+    background-color: #466280;
+    color: white;
+    border-radius: 15px;
+}
+
+#Github-button:hover {
+    background-color: #7087a0; 
+    color: white;
+}
+
+#profile-pic {
+    width: 45%;
+    max-width: 400px;
     margin: 20px 0;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
-nav {
-    margin-top: 20px;
+p {
+    text-align: justify;
 }
-
+/* 
 nav a {
     text-decoration: none;
     color: #333;
@@ -43,7 +101,7 @@ nav a {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: 0 5px;
-}
+} */
 
 section {
     text-align: left;
@@ -52,4 +110,61 @@ section {
 
 section h2 {
     color: #333;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    padding: 0 30px;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0 0px;
+}
+
+footer nav ul {
+    justify-content: space-evenly;
+}
+
+footer nav ul a {
+    color: gray;
+}
+
+footer nav ul li {
+    padding: 0;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.playball-regular {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+    background-color: #466280;
+    border: none;
+    color: white;
+    padding: 8px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.1s;
+    font-family: Baskerville, serif;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #7087a0; 
+    color: white;
 }

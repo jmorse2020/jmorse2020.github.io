@@ -3,110 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack Morse Bio</title>
+    <title>Jack Morse</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" type="text/javascript" defer></script>
 </head>
 <body>
-
-    <header>
-        <h1>Jack Morse Bio</h1>
-    </header>
-
+    <main-header></main-header>
     <main>
-        <div id="content">
-            <!-- The custom paragraph will be displayed here -->
+        <div>
+            <!-- Profile image -->
+            <img id="profile-pic" src="./Files/profile-pic.jpg" alt="Profile pic">
+
+            <!-- Github Navigation link  -->
+            <nav>
+                <a href="https://github.com/jmorse2020" target="_blank" id="Github-button">Link to my GitHub</a>
+                
+                
+            </nav>
+
+            <!-- Sections of the page -->
+            <!-- Section: About  -->
+            <section>
+                <h2>About me</h2>
+                <p>Welcome to my webpage!
+                    <br>
+                I have recently completed my BSc in Maths and Physics at the University of Bath. In October I hope to be starting my PhD at Imperial College in high powered OPCPA lasers in the mid IR and their applications. My hopes with this research are to help in the development of the next generation of high powered short-pulse lasers. I am also interested in taking theoretical courses in nonlinear optics, QED, as well as other courses in my own time on fluid dynamics and advanced GR.
+                I hope to be able to think about dark matter and dark energy, as I find their illusiveness curious. But I also hope my research can lead to positive developments, directly or indirectly, for instance in sustainable energy generation.
+                <br>
+                <br>
+                Separately from physics I am interested in politics, and I do some personal programming projects. I hope to expand this website in the near future with some of my thoughts on politics, and to outline more of my interests.
+                <br>
+                <br>
+                I completed a placement year in 2022/23 at Vulcan in the UK's Central Laser Facility. Some of the work I completed there is outlined below.
+                <br>
+                </p>
+            </section>
+
+            <!-- Section: Publications -->
+            <section>
+                <h2>Publications</h2>
+                <p>At present, I have two scientific publications, both from my time working at the Vulcan laser at the Rutherford Appleton Laboratory, which have been submitted to journals and are in the review process:</p>
+                <ul>
+                    <li><a href="./Files/Spectral_Interferometry_Temporal_Stabilisation.pdf" target="_blank">[Pre-print] Sub-10-attosecond Fibre-length Stabilisation using
+                        Phase-locked Spectral Interferometry.</a> This was the main body of work undertaken whilst on placement at Vulcan. Path-length synchronisation
+                        is important for instance in next generation laser facilities, where the delay between pulses aims to be controlled to the femtosecond regime. 
+                        We investigated path-length stabilisation using phase-locked spectral interferometry, and achieved stabilisation results sub-10 attoseconds.
+                    </li>
+                    <br>
+                    <li><a href="https://www.mdpi.com/2673-3269/4/4/44" target="_blank">Automated Long-Term Stability of a High Energy Laser.</a> In this work I developed a
+                        stand-alone software in C# which controlled the rotation of a half wave-plate prior to having its polarisation redefined. In this way the energy
+                        of a pump laser to an OPCPA system was regulated to a desired set-energy, which prevented damage in the system. The code is available on the 
+                        <a href="https://github.com/CentralLaserFacility/2HzStability" target="_blank">Central Laser Facility GitHub page</a>.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Dissertation</h2>
+                <p>My undergraduate final year project was on simulating mid-IR photon generation in gas-filled hollow core fibres:</p>
+                <ul>
+                    <li><a href="./Files/FYP-Report-up-to-date.pdf" target="_blank">Simulations for Mid-IR Photon Generation in Gas-filled Hollow-core Fibre by Four-wave Mixing</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Curriculum Vitae</h2>
+                You may have found this webpage through my CV. However, if you did not then here is the most recent version of my CV.
+                <ul>
+                    <li><a href="./Files/CV-December-2023.pdf" target="_blank">Curriculum Vitae, December 2023</a>.</li>
+                </ul>
+            </section>
         </div>
-    
-        <script>
-        // Get the last modified date of the HTML file
-        var lastModifiedDate = new Date(document.lastModified);
-    
-        // Format the date as a string
-        var formattedDate = new Intl.DateTimeFormat('en-US', {
-            weekday: 'short',
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric',
-            hour: 'numeric',
-            minute: 'numeric',
-            second: 'numeric',
-            hour12: false, // Use a 24-hour clock
-            timeZoneName: 'short'
-        }).format(lastModifiedDate);
-    
-        // Create your custom paragraph with the formatted date
-        var customParagraph = '<p style="text-align:left">Last updated:   ' + formattedDate + '</p>';
-    
-        // Display the custom paragraph on the page
-        var contentContainer = document.getElementById('content');
-        contentContainer.innerHTML = customParagraph;
-        </script>
-        <!-- Profile image -->
-        <img src="./Files/profile-pic.jpg" alt="Profile pic">
-
-        <!-- Github Navigation link  -->
-        <nav>
-            <a href="https://github.com/jmorse2020" target="_blank">Link to my GitHub</a>
-        </nav>
-
-        <!-- Sections of the page -->
-        <!-- Section: About  -->
-        <section>
-            <h2>About me</h2>
-            <p>Welcome to my webpage! Here's some information about me.
-                <br>
-               I am currently an undergraduate finalist at the University of Bath, studying Mathematics and Physics. I am interested in pursuing a PhD in physics, in the fields I expand upon below.
-               I have always had a strong interest in pursuing physics at a high level through the joy of solving problems, the possibility of learning about how the universe works the way it does, 
-               and due to the potential of impacting the world in a positive way. 
-            <br>
-            <br>
-            My primary research interests are dual. I am keenly interested in the applications of lasers in physics: the <i>extreme</i> interaction of light with matter. In particular,
-             I am fascinated by the physics of laser-wakefield acceleration and exploring potential applications of fusion for energy production, given its relevance to societal 
-             needs for affordable energy while mitigating contributions to climate change. I anticipate that delving into fusion research will inevitably uncover captivating and 
-             deeply interesting physics and is one of the most important challenges for our species to overcome this century.
-            <br>
-            My other key line of interest is with our theory of gravity. I am particularly interested in gaining and contributing to an understanding of gravity which encapsulates
-             dark matter and dark energy. I believe the existence, or lack of existence, of dark matter is one of the most fascinating fundamental questions of our time and it is
-             for this reason I would love to undertake research on it.
-            <br>
-            <br>
-            I constantly uphold myself to high standards and am self-motivated to complete tasks, as I have shown through my extended project work at Vulcan.
-            </p>
-        </section>
-
-         <!-- Section: Publications -->
-         <section>
-            <h2>Publications</h2>
-            <p>At present, I have two scientific publications, both from my time working at the Vulcan laser at the Rutherford Appleton Laboratory, which have been submitted to journals and are in the review process:</p>
-            <ul>
-                <li><a href="./Files/Spectral_Interferometry_Temporal_Stabilisation.pdf" target="_blank">[Pre-print] Sub-10-attosecond Fibre-length Stabilisation using
-                    Phase-locked Spectral Interferometry.</a> This was the main body of work undertaken whilst on placement at Vulcan. Path-length synchronisation
-                     is important for instance in next generation laser facilities, where the delay between pulses aims to be controlled to the femtosecond regime. 
-                     We investigated path-length stabilisation using phase-locked spectral interferometry, and achieved stabilisation results sub-10 attoseconds.
-                </li>
-                <br>
-                <li><a href="https://www.mdpi.com/2673-3269/4/4/44" target="_blank">Automated Long-Term Stability of a High Energy Laser.</a> In this work I developed a
-                    stand-alone software in C# which controlled the rotation of a half wave-plate prior to having its polarisation redefined. In this way the energy
-                    of a pump laser to an OPCPA system was regulated to a desired set-energy, which prevented damage in the system. The code is available on the 
-                    <a href="https://github.com/CentralLaserFacility/2HzStability" target="_blank">Central Laser Facility GitHub page</a>.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Curriculum Vitae</h2>
-            You may have found this webpage through my CV. However, if you did not then here is the most recent version of my CV.
-            <ul>
-                <li><a href="./Files/CV-Nov-2023-V2.pdf" target="_blank">Curriculum Vitae, November 2023</a>.</li>
-            </ul>
-        </section>
-
-
-
-
-       
-        
-        
-
     </main>
 </body>
+<main-footer></main-footer>
 </html>
